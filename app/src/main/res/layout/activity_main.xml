@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:clickable="true"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="navigateToStepCounterActivity"
+        android:text="Simple Step Counter On UI" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="navigateToStepHistoryActivity"
+        android:text="Steps History using Step Detector" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="navigateToCustomAlgoActivity"
+        android:text="Custom Step Detection Algorithm" />
+
+    <EditText
+        android:id="@+id/edit_walking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Walking Peak {18}"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_jogging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jogging Peak {25}"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_running"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Running Peak {32}"
+        android:inputType="number" />
+</LinearLayout>
